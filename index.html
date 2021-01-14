@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <title>Form validation</title>
 </head>
 <body>
@@ -13,46 +14,49 @@
             <div class="form-test">
                 <form action="">
                     <!-- Form Name -->
-                    <legend>Form Name</legend>
+                    <legend>Cadastro</legend>
                     
                     <!-- Text input-->
                     <div class="form-group">
                         <label for="textinput">Nome</label>  
-                        <input id="textinput" name="textinput" type="text" placeholder="nome" > 
+                        <input id="name" name="textinput" type="text" placeholder="nome" > 
                     </div>
                         
                     <!-- Text input-->
                     <div class="form-group">
                         <label for="textinput">CPF</label>  
-                        <input id="textinput" name="textinput" type="text" placeholder="CPF" > 
+                        <input id="cpf" name="textinput" type="text" placeholder="CPF" > 
                     </div>
                        
                     <!-- Text input-->
                     <div class="form-group">
                         <label for="textinput">Usuário</label>  
-                        <input id="textinput" name="textinput" type="text" placeholder="usuário">
+                        <input id="user" name="textinput" type="text" placeholder="usuário">
                     </div>
                     
                     <!-- Text input-->
                     <div class="form-group">
-                        <label for="textinput">Sobrenome</label>  
-                        <input id="textinput" name="textinput" type="text" placeholder="sobrenome">
+                        <label for="surname">Sobrenome</label>  
+                        <input id="surname" name="textinput" type="text" placeholder="sobrenome">
                     </div>
                     
                     <!-- Password input-->
                     <div class="form-group">
                         <label for="passwordinput">Senha</label>
-                        <input id="passwordinput" name="passwordinput" type="password" placeholder="senha" >
+                        <input id="password" name="passwordinput" type="password" placeholder="senha" >
                     </div>
 
                     <!--Submit-->
-                    <input type="submit" value="Send">
+                    <div class="form-group">
+                        <button class="send">Enviar</button>
+                    </div>
                 </form>
             </div>
         </main>
     </div>
 
-    <!--<script type='module' src="/assets/js/class/CpfValidator.js"></script>-->
-    <!--<script type='module' src="/assets/js/class/FormValidator.js"></script>-->
+    <script type='module' src="/assets/js/class/CpfValidator.js"></script>
+    <script type='module' src="/assets/js/class/FormValidator.js"></script>
+    <script type='module' src="/assets/js/main.js"></script>
 </body>
 </html>
