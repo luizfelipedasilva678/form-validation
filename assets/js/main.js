@@ -14,5 +14,6 @@ import FormValidator from '../js/class/FormValidator.js';
             console.log('Falhou')
         }
         
+        validateForm.onlyLetters('cpf')
     })
 })();
