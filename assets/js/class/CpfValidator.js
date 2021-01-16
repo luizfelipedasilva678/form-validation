@@ -1,6 +1,14 @@
 export default class cpfValidator {
     constructor(cpf) {
-        this.cpf = cpf;
+        this.cpfJunto = cpf;
+        this.temp = this.cpfJunto.split('');
+        this.cpf = []; 
+
+        for(let value of this.temp) {
+            if(!isNaN(Number(value))) {
+                this.cpf.push(Number(value));
+            }
+        }
     }
 
     validateFirstNumber() {
