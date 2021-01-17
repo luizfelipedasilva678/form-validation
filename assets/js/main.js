@@ -14,8 +14,9 @@ import FormValidator from '../js/class/FormValidator.js';
                 if(validateForm.checksLength(6,12, 'password') && validateForm.checksLength(3,12, 'user') ) {
                     if(document.querySelector('#cpf').value.length === 11) {
                        validateCpf = new cpfValidator(document.querySelector('#cpf').value);
-                       if(validateCpf.validateFirstNumber() && validateCpf.validateSecondNumber()) {
+                        if(validateCpf.validateFirstNumber() && validateCpf.validateSecondNumber()) {
                             alert('Formulário enviado com sucesso');
+                            e.target.submit();
                         } else {
                             alert('cpf inválido')
                         }
